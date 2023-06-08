@@ -1,0 +1,23 @@
+{
+  "name": "dirsafari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colson0x1/dirsafari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colson0x1/dirsafari/issues"
+  },
+  "homepage": "https://github.com/colson0x1/dirsafari#readme",
+  "bin": {
+    "node-ds": "app.js"
+  }
+}
