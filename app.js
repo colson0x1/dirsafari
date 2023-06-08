@@ -2,6 +2,15 @@
 
 const fs = require('fs');
 const util = require('util');
+const importChalk = async () => {
+  try {
+    const chalk = await import('chalk');
+    return chalk.default;
+  } catch (error) {
+    console.error('Failed to import chalk:', error);
+    process.exit(1);
+  }
+};
 
 // Method #2
 // const lstat = util.promisify(fs.lstat);
@@ -19,11 +28,19 @@ fs.readdir(process.cwd(), async (err, filenames) => {
   });
 
   const allStats = await Promise.all(statPromises);
+  const chalk = await importChalk();
+
+  const folderColor = chalk.hex('#4285F4'); 
+  const fileColor = chalk.hex('#FFA500');
 
   for (let stats of allStats) {
     const index = allStats.indexOf(stats);
 
-    console.log(filenames[index], stats.isFile());
+    if (stats.isFile()) {
+      console.log(fileColor(filenames[index]));
+    } else {
+      console.log(folderColor.bold(filenames[index])); 
+    }
   }
 });
 
@@ -34,7 +51,7 @@ fs.readdir(process.cwd(), async (err, filenames) => {
 //       if (err) {
 //         reject(err);
 //       }
-
+//
 //       resolve(stats);
 //     });
 //   });
