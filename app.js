@@ -11,26 +11,28 @@ const importChalk = async () => {
     process.exit(1);
   }
 };
+const path = require('path');
 
 // Method #2
 // const lstat = util.promisify(fs.lstat);
 
 // Method #3
 const { lstat } = fs.promises;
+const targetDir = process.argv[2] || process.cwd();
 
-fs.readdir(process.cwd(), async (err, filenames) => {
+fs.readdir(targetDir, async (err, filenames) => {
   if (err) {
     console.log(err);
   }
 
   const statPromises = filenames.map((filename) => {
-    return lstat(filename);
+    return lstat(path.join(targetDir, filename));
   });
 
   const allStats = await Promise.all(statPromises);
   const chalk = await importChalk();
 
-  const folderColor = chalk.hex('#4285F4'); 
+  const folderColor = chalk.hex('#4285F4');
   const fileColor = chalk.hex('#FFA500');
 
   for (let stats of allStats) {
@@ -39,7 +41,7 @@ fs.readdir(process.cwd(), async (err, filenames) => {
     if (stats.isFile()) {
       console.log(fileColor(filenames[index]));
     } else {
-      console.log(folderColor.bold(filenames[index])); 
+      console.log(folderColor.bold(filenames[index]));
     }
   }
 });

@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/colson0x1/dirsafari#readme",
   "bin": {
-    "node-ds": "app.js"
+    "ds": "app.js"
   },
   "dependencies": {
     "chalk": "^5.2.0"
