@@ -38,7 +38,7 @@ $ npm install
 $ sudo npm link
 ```
 
-This will create a symbolic link for the app.js file, allowing you to run the app from any directory (globally) by typing `app.js` in the terminal.
+This will create a symbolic link for the app.js file, allowing you to run the app from any directory (globally) by typing `node-ds` in the terminal.
 
 
 ## Usage
