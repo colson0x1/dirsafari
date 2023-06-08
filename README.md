@@ -46,7 +46,7 @@ This will create a symbolic link for the app.js file, allowing you to run the ap
 To run the app, use the following command:
 
 ```bash
-$ node app.js [directory]
+$ node-ds [directory]
 ```
 
 Replace `[directory]` with the path to the directory you want to list. If no directory is specified, the app will use the current working directory.
