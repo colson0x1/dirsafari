@@ -10,6 +10,10 @@ This is a simple Node.js terminal application that lists files and folders in a 
 
 `$ npm install -g dirsafari`
 $ dirsafari
+$ npm root -g
+$ cd $(npm root -g)/dirsafari
+$ sudo chmod +x app.js
+$ sudo npm link
 
 ## Installation from git repository
 
