@@ -19,7 +19,8 @@
   "bin": {
     "ds": "app.js",
     "dirsafari": "app.js",
-    "nodeds": "app.js"
+    "nodeds": "app.js",
+    "node-ds": "app.js"
   },
   "dependencies": {
     "chalk": "^5.2.0"
