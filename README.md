@@ -17,6 +17,8 @@ $ ds [directory]
 OR
 $ nodeds [directory]
 OR
+$ node-ds [directory]
+OR
 $ dirsafari [directory]
 ```
 
@@ -64,6 +66,8 @@ OR
 $ ds [directory]
 OR
 $ nodeds [directory]
+OR
+$ node-ds [directory]
 OR
 $ dirsafari [directory]
 ```
