@@ -1,18 +1,17 @@
 {
   "name": "dirsafari",
   "version": "1.0.0",
-  "description": "",
+  "description": "DirSafari - A terminal application that allows easy listing of files and folders from any directory.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/colson0x1/dirsafari.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "COLSON",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/colson0x1/dirsafari/issues"
   },
@@ -22,5 +21,21 @@
   },
   "dependencies": {
     "chalk": "^5.2.0"
-  }
+  },
+  "keywords": [
+    "ls",
+    "directory listing",
+    "terminal",
+    "cli",
+    "file",
+    "directory",
+    "listing"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "app.js",
+    "README.md"
+  ]
 }
