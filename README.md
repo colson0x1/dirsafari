@@ -6,7 +6,12 @@ This is a simple Node.js terminal application that lists files and folders in a 
 
 - Node.js (version 12 or higher) should be installed on your machine. You can download it from [here](https://nodejs.org).
 
-## Installation
+## RUN as NPM Module
+
+`$ npm install -g dirsafari`
+$ dirsafari
+
+## Installation from git repository
 
 1. Clone the repository or download the source code.
 
@@ -39,7 +44,6 @@ $ sudo npm link
 ```
 
 This will create a symbolic link for the app.js file, allowing you to run the app from any directory (globally) by typing `node-ds` in the terminal.
-
 
 ## Usage
 
@@ -78,7 +82,7 @@ I would like to acknowledge the following resources and libraries that were used
 - [Node.js](https://nodejs.org)
 - [chalk](https://www.npmjs.com/package/chalk)
 
-## Screenshots 
+## Screenshots
 
 ![dirsafari node-ds](https://i.imgur.com/yjBmMo0.png)
 
