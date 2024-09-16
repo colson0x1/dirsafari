@@ -1,6 +1,6 @@
 {
   "name": "dirsafari",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DirSafari - A terminal application that allows easy listing of files and folders from any directory.",
   "main": "app.js",
   "scripts": {
