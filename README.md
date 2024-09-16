@@ -8,12 +8,17 @@ This is a simple Node.js terminal application that lists files and folders in a 
 
 ## RUN as NPM Module
 
-`$ npm install -g dirsafari`
-$ dirsafari
-$ npm root -g
-$ cd $(npm root -g)/dirsafari
-$ sudo chmod +x app.js
-$ sudo npm link
+```
+$ npm install -g dirsafari
+// To EXECUTE DirSafari:
+$ ds
+OR
+$ ds [directory]
+OR
+$ nodeds [directory]
+OR
+$ dirsafari [directory]
+```
 
 ## Installation from git repository
 
@@ -47,14 +52,20 @@ $ npm install
 $ sudo npm link
 ```
 
-This will create a symbolic link for the app.js file, allowing you to run the app from any directory (globally) by typing `node-ds` in the terminal.
+This will create a symbolic link for the app.js file, allowing you to run the app from any directory (globally) by typing `ds` in the terminal.
 
 ## Usage
 
 To run the app, use the following command:
 
 ```bash
-$ node-ds [directory]
+$ ds
+OR
+$ ds [directory]
+OR
+$ nodeds [directory]
+OR
+$ dirsafari [directory]
 ```
 
 Replace `[directory]` with the path to the directory you want to list. If no directory is specified, the app will use the current working directory.
