@@ -77,13 +77,13 @@ The app will display the list of files and folders in the specified directory, w
 To list the files and folders in the current directory, run:
 
 ```bash
-$ node-ds
+$ ds
 ```
 
 To list the files and folders in a specific directory, run:
 
 ```bash
-$ node-ds /path/to/directory
+$ ds /path/to/directory
 ```
 
 ## License
